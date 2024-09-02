@@ -1,25 +1,151 @@
-*{
+* {
   box-sizing: border-box;
-  
+
   margin: 0;
   padding: 0;
-  
+
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 4px;
 }
 
-body{
-  padding: 0 8.5%;
+a,
+button {
+  cursor: pointer;
 }
 
-.header__links{
+/* Шапка */
+header {
+  width: 100%;
+  height: 19rem;
+
   display: flex;
-  gap: 30px;
-}
-
-.header__container{
-  display: flex;
-  flex-flow: row nowrap;
   align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  padding: 0 8.5%;
+
+  transition: top 0.3s;
+  z-index: 1000;
+
+  background-color: #fff;
+
+  box-shadow: inset 0 -0.5rem 0 #eff2f2;
+}
+
+.header__container {
+  width: 100%;
+
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+
+  column-gap: 12.75rem;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+
+  flex-grow: 1;
+}
+
+.header__links {
+  display: flex;
+  gap: 7.5rem;
+}
+
+.nav__item {
+  list-style-type: none;
+
+  display: flex;
+  align-items: center;
+}
+
+/* Ссылки шапки */
+.header__links a,
+button {
+  text-decoration: none;
+
+  font-size: 3.5rem;
+  color: #333;
+}
+
+.header__links a:visited {
+  color: inherit;
+}
+
+.header__links,
+a:hover,
+a:focus,
+a:active,
+.header__DropdownMenu:hover button,
+:focus button,
+:active button,
+.header__DropdownMenu:hover svg,
+:focus svg,
+:active svg {
+  text-decoration: none;
+  outline: none;
+
+  color: #03b2a5;
+  stroke: #03b2a5;
+}
+
+/* Кнопки шапки */
+.header__button {
+  padding: 3.5rem 5rem;
+
+  border: none;
+  border-radius: 1rem;
+
+  background-color: #e3f5f5;
+  color: #03b2a5;
+
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.header__button:active {
+  background: #80d8d1;
+  color: #0a9e91;
+}
+
+.header__button:hover {
+  background: #b4e8e4;
+  color: #00a89b;
+}
+
+.header__button:focus {
+  background: #e3f5f5;
+  color: #03b2a5;
+}
+
+.header__DropdownMenu {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  column-gap: 2.5rem;
+
+  cursor: pointer;
+}
+
+.DropdownMenu__item {
+  border: none;
+  background: none;
+}
+
+.header__DropdownMenu svg {
+  stroke: #333;
+}
+
+section {
+  margin-top: 19rem;
+  font-size: 20rem;
+
+  height: 1vh;
 }
