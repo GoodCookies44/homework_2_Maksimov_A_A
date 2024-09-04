@@ -1,3 +1,4 @@
+/* Общие стили */
 * {
   box-sizing: border-box;
 
@@ -13,6 +14,35 @@
 a,
 button {
   cursor: pointer;
+}
+
+a:visited {
+  color: inherit;
+}
+
+.link:hover,
+.link:focus,
+.link:active,
+.link:hover button,
+.link:focus button,
+.link:active button,
+.link:hover svg,
+.link:focus svg,
+.link:active svg {
+  text-decoration: none;
+  outline: none;
+
+  color: #03b2a5;
+  stroke: #03b2a5;
+}
+
+h1 {
+  margin: 8rem 0;
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 12rem;
+  color: #333;
 }
 
 /* Шапка */
@@ -75,27 +105,6 @@ button {
   color: #333;
 }
 
-.header__links a:visited {
-  color: inherit;
-}
-
-.header__links,
-a:hover,
-a:focus,
-a:active,
-.header__DropdownMenu:hover button,
-:focus button,
-:active button,
-.header__DropdownMenu:hover svg,
-:focus svg,
-:active svg {
-  text-decoration: none;
-  outline: none;
-
-  color: #03b2a5;
-  stroke: #03b2a5;
-}
-
 /* Кнопки шапки */
 .header__button {
   padding: 3.5rem 5rem;
@@ -125,6 +134,7 @@ a:active,
   color: #03b2a5;
 }
 
+/* Выдвижное меню */
 .header__DropdownMenu {
   display: flex;
   flex-flow: row;
@@ -143,9 +153,93 @@ a:active,
   stroke: #333;
 }
 
-section {
-  margin-top: 19rem;
+/* Основной контент */
+main {
   font-size: 20rem;
 
+  padding: 19rem 8.5% 0;
+
   height: 1vh;
+}
+
+/* Хлебные крошки */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  list-style: none;
+
+  padding: 0;
+  margin: 4rem 0 0 0;
+}
+
+.breadcrumb__item {
+  font-size: 3rem;
+  align-items: center;
+
+  color: #333333;
+}
+
+.breadcrumb__item + .breadcrumb__item::before {
+  content: "";
+
+  display: inline-block;
+
+  width: 4rem;
+  height: 4rem;
+
+  background: no-repeat center/contain
+    url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2216%22 height=%2216%22 viewBox=%220 0 16 16%22 fill=%22none%22%3E%3Cg clip-path=%22url(%23clip0_4492_2226)%22%3E%3Cpath d=%22M5.8125 12.6875L7.375 11.125L10.5 8L7.375 4.875L5.8125 3.3125%22 stroke=%22%23333333%22 stroke-opacity=%220.7%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id=%22clip0_4492_2226%22%3E%3Crect width=%2216%22 height=%2216%22 fill=%22white%22 transform=%22matrix(0 1 1 0 0 0)%22/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+  vertical-align: middle;
+}
+
+.breadcrumb__item a {
+  text-decoration: none;
+
+  font-size: 3rem;
+}
+
+.breadcrumb__item.active {
+  color: #333333;
+  align-items: center;
+}
+
+/* Теги */
+.main__tag_container {
+  display: flex;
+}
+
+.tag__items {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  gap: 2rem;
+
+  list-style-type: none;
+}
+
+.tag__item {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  gap: 1rem;
+
+  padding: 1.5rem;
+
+  font-size: 3.5rem;
+  font-weight: 600;
+
+  border: 1px solid #c1c5cd;
+  border-radius: 6rem;
+
+  background: none;
+
+  white-space: nowrap;
+}
+
+.tag__item:hover,
+.tag__item:focus,
+.tag__item:active {
+  outline: none;
+  border-color: #16c8bb;
+  box-shadow: 0 0 0 2px rgba(22, 200, 187, 0.5);
 }
