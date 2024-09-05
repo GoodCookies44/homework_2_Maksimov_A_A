@@ -19,8 +19,6 @@
   </head>
   <body>
     <header id="header">
-      <script src="/Scripts/Scroll.js"></script>
-
       <div class="header__container">
         <svg
           alt="Logo"
@@ -146,26 +144,38 @@
           >Подобрать психолога
         </button>
       </div>
+
+      <script src="/Scripts/Scroll.js"></script>
     </header>
     <main>
-      <nav aria-label="Хлебные крошки">
-        <script src="/Scripts/Breadcrumb.js"></script>
-
+      <nav>
         <ul id="breadcrumb" class="breadcrumb"></ul>
+
+        <script src="/Scripts/Breadcrumb.js"></script>
       </nav>
-      <section aria-label="Основной контент">
+      <section>
         <h1>Блог</h1>
         <div class="main__tag_container">
           <ul class="tag__items">
             <li>
               <button class="tag__item">
-                <img src="/Icons/emoji_SmilingFace.svg" alt="Unicorn icon" class="icon" /> Все
+                <img
+                  src="/Icons/tags_icons/emoji_SmilingFace.svg"
+                  alt="Tag icon SmilingFace"
+                  class="icon"
+                />
+                Все
               </button>
             </li>
             <li><button class="tag__item">Самооценка и самопринятие</button></li>
             <li>
               <button class="tag__item">
-                <img src="/Icons/emoji_Unicorn.svg" alt="Unicorn icon" class="icon" /> Self
+                <img
+                  src="/Icons/tags_icons/emoji_Unicorn.svg"
+                  alt="Tag icon Unicorn"
+                  class="icon"
+                />
+                Self
               </button>
             </li>
             <li><button class="tag__item">Чувства и эмоции</button></li>
@@ -175,6 +185,289 @@
             <li><button class="tag__item">Насилие</button></li>
             <li><button class="tag__item">Личное здоровье</button></li>
           </ul>
+        </div>
+        <div class="main__articles_container">
+          <article class="article__container" data-id="1">
+            <ul class="article__tags_container">
+              <li class="article__tag">
+                <button class="tag__item">
+                  <img
+                    src="/Icons/tags_icons/emoji_Unicorn.svg"
+                    alt="Tag icon Unicorn"
+                    class="icon"
+                  />
+                  Самооценка и самопринятие
+                </button>
+              </li>
+              <li class="article__tag">
+                <button class="tag__item">
+                  <img
+                    src="/Icons/tags_icons/emoji_Unicorn.svg"
+                    alt="Tag icon Unicorn"
+                    class="icon"
+                  />
+                  Self
+                </button>
+              </li>
+            </ul>
+            <img
+              class="article__img"
+              src="/Icons/article_imgs/article_img1.png"
+              alt="Article image"
+            />
+            <div class="article__content">
+              <h2 class="article__title">
+                Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики
+              </h2>
+              <h3 class="article__author">Автор: Лиза Файнтух</h3>
+              <p class="article__paragraph">
+                Изначально термин «эмоциональное профессиональной сфере и относился Lorem, ipsum
+                dolor sit amet consectetur adipisicing elit. Magni sapiente, illum, velit
+                cupiditate, sit repudiandae maxime adipisci temporibus officiis quos minus
+                perspiciatis eius rem? Magnam veritatis iste delectus eum autem.
+              </p>
+              <span class="article__date">21.08.2021</span>
+            </div>
+          </article>
+
+          <article class="article__container" data-id="2">
+            <ul class="article__tags_container">
+              <li class="article__tag">
+                <button class="tag__item">
+                  <img
+                    src="/Icons/tags_icons/emoji_Unicorn.svg"
+                    alt="Tag icon Unicorn"
+                    class="icon"
+                  />
+                  Self
+                </button>
+              </li>
+            </ul>
+            <img
+              class="article__img"
+              src="/Icons/article_imgs/article_img2.png"
+              alt="Article image"
+            />
+            <div class="article__content">
+              <h2 class="article__title">Как не утонуть в тревоге и управлять своими страхами</h2>
+              <h3 class="article__author">Автор: Екатерина Бельтюкова</h3>
+              <p class="article__paragraph">
+                Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в
+                разных ситуациях по-разному обходиться Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Magni sapiente, illum, velit cupiditate, sit repudiandae maxime
+                adipisci temporibus officiis quos minus perspiciatis eius rem? Magnam veritatis iste
+                delectus eum autem.
+              </p>
+              <span class="article__date">11.08.2021</span>
+            </div>
+          </article>
+
+          <article class="article__container" data-id="3">
+            <ul class="article__tags_container">
+              <li class="article__tag">
+                <button class="tag__item">
+                  <img
+                    src="/Icons/tags_icons/emoji_Unicorn.svg"
+                    alt="Tag icon Unicorn"
+                    class="icon"
+                  />
+                  Самооценка и самопринятие
+                </button>
+              </li>
+              <li class="article__tag">
+                <button class="tag__item">
+                  <img
+                    src="/Icons/tags_icons/emoji_Unicorn.svg"
+                    alt="Tag icon Unicorn"
+                    class="icon"
+                  />
+                  Психология питания
+                </button>
+              </li>
+            </ul>
+            <img
+              class="article__img"
+              src="/Icons/article_imgs/article_img3.png"
+              alt="Article image"
+            />
+            <div class="article__content">
+              <h2 class="article__title">
+                Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики
+              </h2>
+              <h3 class="article__author">Автор: Лиза Файнтух</h3>
+              <p class="article__paragraph">
+                Изначально термин «эмоциональное профессиональной сфере и относился Lorem, ipsum
+                dolor sit amet consectetur adipisicing elit. Magni sapiente, illum, velit
+                cupiditate, sit repudiandae maxime adipisci temporibus officiis quos minus
+                perspiciatis eius rem? Magnam veritatis iste delectus eum autem.
+              </p>
+              <span class="article__date">21.08.2021</span>
+            </div>
+          </article>
+
+          <article class="article__container" data-id="4">
+            <ul class="article__tags_container">
+              <li class="article__tag">
+                <button class="tag__item">
+                  <img
+                    src="/Icons/tags_icons/emoji_Unicorn.svg"
+                    alt="Tag icon Unicorn"
+                    class="icon"
+                  />
+                  Self
+                </button>
+              </li>
+            </ul>
+            <img
+              class="article__img"
+              src="/Icons/article_imgs/article_img4.png"
+              alt="Article image"
+            />
+            <div class="article__content">
+              <h2 class="article__title">Как не утонуть в тревоге и управлять своими страхами</h2>
+              <h3 class="article__author">Автор: Екатерина Бельтюкова</h3>
+              <p class="article__paragraph">
+                Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в
+                разных ситуациях по-разному обходиться Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Magni sapiente, illum, velit cupiditate, sit repudiandae maxime
+                adipisci temporibus officiis quos minus perspiciatis eius rem? Magnam veritatis iste
+                delectus eum autem.
+              </p>
+              <span class="article__date">11.08.2021</span>
+            </div>
+          </article>
+
+          <article class="article__container" data-id="5">
+            <ul class="article__tags_container">
+              <li class="article__tag">
+                <button class="tag__item">
+                  <img
+                    src="/Icons/tags_icons/emoji_Unicorn.svg"
+                    alt="Tag icon Unicorn"
+                    class="icon"
+                  />
+                  Self
+                </button>
+              </li>
+            </ul>
+            <img
+              class="article__img"
+              src="/Icons/article_imgs/article_img5.png"
+              alt="Article image"
+            />
+            <div class="article__content">
+              <h2 class="article__title">Как управлять своими эмоциями: 8 шагов</h2>
+              <h3 class="article__author">Автор: Екатерина Бельтюкова</h3>
+              <p class="article__paragraph">
+                Клиенты часто спрашивают, как КОНТРОЛИРОВАТЬ свои негативные эмоции. Пришло время об
+                этом написать! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni
+                sapiente, illum, velit cupiditate, sit repudiandae maxime adipisci temporibus
+                officiis quos minus perspiciatis eius rem? Magnam veritatis iste delectus eum autem.
+              </p>
+              <span class="article__date">07.08.2021</span>
+            </div>
+          </article>
+
+          <article class="article__container" data-id="6">
+            <ul class="article__tags_container">
+              <li class="article__tag">
+                <button class="tag__item">
+                  <img
+                    src="/Icons/tags_icons/emoji_Unicorn.svg"
+                    alt="Tag icon Unicorn"
+                    class="icon"
+                  />
+                  Self
+                </button>
+              </li>
+            </ul>
+            <img
+              class="article__img"
+              src="/Icons/article_imgs/article_img6.png"
+              alt="Article image"
+            />
+            <div class="article__content">
+              <h2 class="article__title">
+                Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики
+              </h2>
+              <h3 class="article__author">
+                Автор: Лиза Файнтух под редакцией Екатерины Бельтюковой
+              </h3>
+              <p class="article__paragraph">
+                Изначально термин «эмоциональное профессиональной сфере и относился Lorem, ipsum
+                dolor sit amet consectetur adipisicing elit. Magni sapiente, illum, velit
+                cupiditate, sit repudiandae maxime adipisci temporibus officiis quos minus
+                perspiciatis eius rem? Magnam veritatis iste delectus eum autem.
+              </p>
+              <span class="article__date">21.08.2021</span>
+            </div>
+          </article>
+
+          <article class="article__container" data-id="7">
+            <ul class="article__tags_container">
+              <li class="article__tag">
+                <button class="tag__item">
+                  <img
+                    src="/Icons/tags_icons/emoji_Unicorn.svg"
+                    alt="Tag icon Unicorn"
+                    class="icon"
+                  />
+                  Self
+                </button>
+              </li>
+            </ul>
+            <img
+              class="article__img"
+              src="/Icons/article_imgs/article_img7.png"
+              alt="Article image"
+            />
+            <div class="article__content">
+              <h2 class="article__title">Как не утонуть в тревоге и управлять своими страхами</h2>
+              <h3 class="article__author">Автор: Екатерина Бельтюкова</h3>
+              <p class="article__paragraph">
+                Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в
+                разных ситуациях по-разному обходиться Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Magni sapiente, illum, velit cupiditate, sit repudiandae maxime
+                adipisci temporibus officiis quos minus perspiciatis eius rem? Magnam veritatis iste
+                delectus eum autem.
+              </p>
+              <span class="article__date">11.08.2021</span>
+            </div>
+          </article>
+
+          <article class="article__container" data-id="8">
+            <ul class="article__tags_container">
+              <li class="article__tag">
+                <button class="tag__item">
+                  <img
+                    src="/Icons/tags_icons/emoji_Unicorn.svg"
+                    alt="Tag icon Unicorn"
+                    class="icon"
+                  />
+                  Self
+                </button>
+              </li>
+            </ul>
+            <img
+              class="article__img"
+              src="/Icons/article_imgs/article_img8.png"
+              alt="Article image"
+            />
+            <div class="article__content">
+              <h2 class="article__title">Как управлять своими эмоциями: 8 шагов</h2>
+              <h3 class="article__author">Автор: Екатерина Бельтюкова</h3>
+              <p class="article__paragraph">
+                Клиенты часто спрашивают, как КОНТРОЛИРОВАТЬ свои негативные эмоции. Пришло время об
+                этом написать! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni
+                sapiente, illum, velit cupiditate, sit repudiandae maxime adipisci temporibus
+                officiis quos minus perspiciatis eius rem? Magnam veritatis iste delectus eum autem.
+              </p>
+              <span class="article__date">07.08.2021</span>
+            </div>
+          </article>
+
+          <script src="/Scripts/ArticleLinks.js"></script>
+          <script src="/Scripts/ShortenText.js"></script>
         </div>
       </section>
     </main>
