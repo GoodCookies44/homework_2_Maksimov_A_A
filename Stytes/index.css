@@ -11,6 +11,13 @@
   font-size: 4px;
 }
 
+body {
+  background-image: url("/Icons/background.svg");
+  background-repeat: no-repeat;
+  background-position: 0 100rem;
+  background-size: cover;
+}
+
 a,
 button {
   cursor: pointer;
@@ -34,6 +41,11 @@ a:visited {
 
   color: #03b2a5;
   stroke: #03b2a5;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
@@ -87,11 +99,11 @@ header {
 .header__links {
   display: flex;
   gap: 7.5rem;
+
+  list-style-type: none;
 }
 
 .nav__item {
-  list-style-type: none;
-
   display: flex;
   align-items: center;
 }
@@ -130,8 +142,9 @@ button {
 }
 
 .header__button:focus {
-  background: #e3f5f5;
-  color: #03b2a5;
+  background: #b4e8e4;
+  color: #00a89b;
+  outline: none;
 }
 
 /* Выдвижное меню */
@@ -149,6 +162,13 @@ button {
   background: none;
 }
 
+.DropdownMenu__item:focus {
+  outline: none;
+
+  color: #03b2a5;
+  stroke: #03b2a5;
+}
+
 .header__DropdownMenu svg {
   stroke: #333;
 }
@@ -156,8 +176,6 @@ button {
 /* Основной контент */
 main {
   padding: 19rem 8.5% 0;
-
-  height: 1vh;
 }
 
 /* Хлебные крошки */
@@ -264,6 +282,8 @@ main {
   display: flex;
   flex-direction: column;
 
+  background-color: #ffffff;
+
   border: 1px solid #dedede;
   border-radius: 4rem;
 
@@ -334,4 +354,184 @@ main {
   font-size: 3rem;
 
   color: #868686;
+}
+
+/* Кнока "Ещё" */
+.main__button_load_more {
+  margin: 14rem auto 24rem;
+  padding: 3rem 18rem;
+
+  border: none;
+  border-radius: 1rem;
+
+  background-color: #35b3a9;
+  color: #fff;
+
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.main__button_load_more:active {
+  background: #028076;
+  border-radius: 2px solid #028076;
+}
+
+.main__button_load_more:hover {
+  background: #03a094;
+  border-radius: 2px solid #03a094;
+}
+
+/* Футер */
+footer {
+  padding: 10rem 30rem 4.25rem;
+
+  color: #fff;
+  background-color: #2963a3;
+}
+
+.footer__overLine_items {
+  display: flex;
+  justify-content: space-between;
+
+  gap: 22.8rem;
+}
+
+.footer__links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem 23.5rem;
+
+  white-space: nowrap;
+
+  list-style-type: none;
+}
+
+.footer__links a {
+  text-decoration: none;
+
+  font-size: 4rem;
+  font-weight: 700;
+
+  color: #fff;
+}
+
+.footer__mail_container {
+  display: flex;
+  flex-direction: column;
+
+  gap: 2rem;
+}
+
+.footer__mail_subscribe {
+  font-size: 4.5rem;
+  font-weight: 700;
+
+  color: #fff;
+}
+
+.mail__input_container {
+  display: flex;
+  flex-direction: row;
+
+  width: fit-content;
+
+  background-color: #fff;
+  border-radius: 1rem;
+}
+
+.footer__mail_input {
+  width: 79rem;
+
+  padding: 3.5rem 4rem;
+
+  border: none;
+  border-radius: 1rem;
+
+  font-size: 3.5rem;
+}
+
+.footer__mail_input::placeholder {
+  color: #9d9d9d;
+}
+
+.footer__mail_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 3.5rem 6rem;
+
+  background: #16c8bb;
+
+  border: none;
+  border-radius: 1rem;
+}
+
+.footer__mail_button:active {
+  background: #028076;
+  border-radius: 2px solid #028076;
+}
+
+.footer__mail_button:hover {
+  background: #03a094;
+  border-radius: 2px solid #03a094;
+}
+
+.footer__mail_subscribe2 {
+  font-size: 3rem;
+  font-weight: 100;
+
+  color: #fff;
+}
+
+.footer__socials {
+  display: flex;
+  flex-flow: column;
+  gap: 10rem;
+}
+
+.socials__list {
+  display: flex;
+  gap: 4rem;
+
+  list-style-type: none;
+}
+
+.socials__item .link:hover svg,
+.socials__item .link:focus svg,
+.socials__item .link:active svg {
+  stroke: none;
+}
+
+.footer__underLine_items::before {
+  content: "";
+  display: block;
+
+  width: 100%;
+  height: 1px;
+
+  margin: 6rem 0 4rem;
+
+  background-color: #9d9d9d;
+  opacity: 0.3;
+}
+
+.underLine__item,
+.unrerLine__promo,
+.underLine__button {
+  margin-right: 3.5rem;
+
+  text-decoration: none;
+
+  font-size: 3.5rem;
+  font-weight: 100;
+
+  color: #fff;
+
+  opacity: 0.7;
+}
+
+.underLine__button {
+  border: none;
+  background-color: initial;
 }
