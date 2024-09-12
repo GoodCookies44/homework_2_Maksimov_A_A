@@ -5,11 +5,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const breadcrumbHTML = path
     .map((segment, index) => {
-      const readableName = index === path.length - 1 ? pageTitle : segment.replace(".html", "");
-      const href = index === 0 ? "index.html" : segment;
-      return `<li class="breadcrumb__item ${index === path.length - 1 ? "active" : ""}">
-              ${index === path.length - 1 ? readableName : `<a href="${href}">${readableName}</a>`}
-            </li>`;
+      let readableName;
+      let href;
+
+      if (segment === "ArticlesPages") {
+        readableName = "Блог";
+        href = "/Pages/Blog.html";
+      } else {
+        readableName = segment.replace(".html", "");
+        href = index === 0 ? "index.html" : segment;
+      }
+      if (index === path.length - 1) {
+        return `<li class="breadcrumb__item active">${pageTitle}</li>`;
+      }
+
+      return `<li class="breadcrumb__item"><a class="link" href="${href}">${readableName}</a></li>`;
     })
     .join("");
 

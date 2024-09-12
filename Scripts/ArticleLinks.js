@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     article.addEventListener("click", function (event) {
       const articleId = this.getAttribute("data-id");
       if (articleId) {
-        window.location.href = `../Pages/ArticlesPage/article${articleId}.html`;
+        window.location.href = `../Pages/ArticlesPages/article${articleId}.html`;
       }
     });
   });

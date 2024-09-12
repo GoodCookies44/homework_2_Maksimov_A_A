@@ -11,7 +11,7 @@
   font-size: 4px;
 }
 
-body {
+.blogPage__body {
   background-image: url("/Icons/background.svg");
   background-repeat: no-repeat;
   background-position: 0 100rem;
@@ -20,6 +20,7 @@ body {
 
 a,
 button {
+  all: unset;
   cursor: pointer;
 }
 
@@ -181,7 +182,8 @@ main {
 /* Хлебные крошки */
 .breadcrumb {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+
   list-style: none;
 
   padding: 0;

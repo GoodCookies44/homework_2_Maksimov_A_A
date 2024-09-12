@@ -1,0 +1,108 @@
+.articlePage__container {
+  display: flex;
+
+  gap: 57rem;
+}
+
+.articlePage__container section {
+  flex-grow: 2.5;
+  border: none;
+}
+
+/* Заголовки */
+.article__title_container {
+  margin: 13.5rem 0 6rem;
+}
+
+.article__title_container > h1 {
+  margin: 0 0 4rem;
+}
+
+.article__title_container > .article__author {
+  display: inline;
+  position: relative;
+}
+
+.article__title_container > .article__author::after {
+  content: "•";
+
+  margin: 0 2rem;
+
+  color: #494949;
+}
+
+.article__title_container > .article__date {
+  color: #494949;
+}
+
+.articlePage__container .article__img {
+  height: 50%;
+
+  margin: 0 0 6rem;
+}
+
+/* Оглавление */
+.toc__container h3 {
+  font-size: 4rem;
+  font-weight: 700;
+
+  margin-bottom: 4rem;
+}
+
+.toc__links .toc__item {
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.toc__links .marker::before {
+  content: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiIHZpZXdCb3g9IjAgMCA4IDgiIGZpbGw9Im5vbmUiPjxjaXJjbGUgY3g9IjQiIGN5PSI0IiByPSI0IiBmaWxsPSIjMDNCMkE1Ii8+PC9zdmc+");
+
+  margin-right: 1.5rem;
+}
+
+.toc__item {
+  display: block;
+  position: relative;
+
+  font-size: 4rem;
+}
+
+.toc__item a {
+  position: relative;
+
+  color: #333;
+}
+
+.toc__item a::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+}
+
+.toc__subLinks {
+  list-style-type: none;
+}
+
+.toc__subLinks .toc__item .link {
+  margin-left: calc(4rem * var(--level, 1));
+  padding: 0;
+}
+
+.toc__subLinks .toc__item:nth-child(2) {
+  --level: 2;
+}
+
+.toc__subLinks .toc__item:nth-child(3) {
+  --level: 3;
+}
+
+/* Боковая панель */
+aside {
+  flex-grow: 1;
+}
