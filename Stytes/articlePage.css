@@ -4,7 +4,7 @@
   gap: 57rem;
 }
 
-.articlePage__container section {
+.articlePage__container article {
   flex-grow: 2.5;
   border: none;
 }
@@ -35,9 +35,7 @@
   color: #494949;
 }
 
-.articlePage__container .article__img {
-  height: 50%;
-
+.article__header .article__img {
   margin: 0 0 6rem;
 }
 
@@ -51,42 +49,29 @@
 
 .toc__links .toc__item {
   position: relative;
-  padding-bottom: 2rem;
 }
 
-.toc__links .marker::before {
+.marker::marker {
   content: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiIHZpZXdCb3g9IjAgMCA4IDgiIGZpbGw9Im5vbmUiPjxjaXJjbGUgY3g9IjQiIGN5PSI0IiByPSI0IiBmaWxsPSIjMDNCMkE1Ii8+PC9zdmc+");
-
-  margin-right: 1.5rem;
 }
 
-.toc__item {
-  display: block;
-  position: relative;
-
+.toc__item,
+.article__item {
   font-size: 4rem;
+  padding: 0 0 2rem 2rem;
 }
 
 .toc__item a {
   position: relative;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
 
   color: #333;
 }
-
-.toc__item a::after {
-  content: "";
-
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-
-  width: 100%;
-  height: 1px;
-  background: currentColor;
-}
-
 .toc__subLinks {
   list-style-type: none;
+  padding: 2rem 0 0 8rem;
 }
 
 .toc__subLinks .toc__item .link {
@@ -102,7 +87,87 @@
   --level: 3;
 }
 
+/* Основной текст */
+.tab__article_title {
+  margin: 6rem 0 0;
+
+  font-size: 6rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.tab__article_content {
+  margin: 4rem 0;
+
+  font-size: 4rem;
+  font-weight: 400;
+  color: #333;
+}
+
+.article__blockquote_1 {
+  margin: 10rem 0 0;
+  padding: 8.5rem 6rem 6rem;
+
+  background-image: url("/Icons/quote_background_1.svg");
+  background-repeat: no-repeat;
+  background-position: 6rem 6rem;
+  background-color: #f3f7fe;
+
+  border-radius: 4rem;
+}
+
+.quote__content {
+  font-size: 4rem;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 6rem;
+}
+
+.quote__autor {
+  margin-top: 2rem;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.article__list {
+  margin: 4rem 0 6rem;
+}
+
+.article__img_container {
+  margin-bottom: 10.5em;
+}
+
+.article__img_container .article__img {
+  height: 100%;
+  margin-bottom: 4em;
+}
+
+figcaption {
+  font-size: 3.5rem;
+  color: #868686;
+}
+
+.article__blockquote_2 {
+  height: 42rem;
+  padding: 8.5rem 6rem 6rem;
+
+  background-image: url("/Icons/quote_background_2.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4rem;
+
+  text-align: center;
+  justify-items: center;
+}
+
+.article__blockquote_2 .quote__content {
+  width: 121rem;
+}
+
 /* Боковая панель */
 aside {
   flex-grow: 1;
+  min-width: 70rem;
+  border: 2px solid #333;
 }
