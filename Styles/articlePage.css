@@ -282,17 +282,31 @@ figcaption {
 
 /* Боковая панель */
 aside {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 13.5rem;
+
   flex-grow: 1;
-  min-width: 70rem;
+  width: 70rem;
+  gap: 6rem;
 }
 
 .aside__banner_container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 6rem;
 
   border-radius: 4rem;
+}
+
+.aside__banner_container .article__button {
+  width: 90%;
+
+  text-align: center;
+
+  margin: 0;
+  padding: 3rem;
 }
 
 .banner_1 {
@@ -300,9 +314,160 @@ aside {
   background-color: #e6f0fd;
 }
 
-.banner_1 .article__button {
-  margin: 6rem 0 0;
-  padding: 3rem auto;
+.banner_1 h4 {
+  width: 90%;
+
+  margin: 7rem 0 3rem;
+
+  font-size: 4.5rem;
+  font-weight: 600;
+}
+
+.banner_1 p {
+  margin-bottom: 6rem;
+
+  font-size: 3.5rem;
+}
+
+.banner_2 {
+  position: relative;
+
+  padding: 6rem 4rem 9rem;
+
+  text-align: center;
+
+  border: 1px solid #dedede;
+}
+
+.banner_2 h4 {
+  margin: 4rem 0 1rem;
+
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.banner_2 h5 {
+  margin: 0 0 1rem;
+
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.banner_2 h6 {
+  width: 100%;
+
+  margin: 0;
+
+  font-size: 3.5rem;
+  color: #a2a7b1;
+}
+
+.banner_2 h6::after {
+  content: "";
+
+  margin: 4rem 0;
+
+  display: block;
+
+  width: 100%;
+  height: 1px;
+
+  background-color: #dedede;
+}
+
+.aside__problem_container {
+  text-align: left;
+}
+
+.banner_2 h3 {
+  margin: 0;
+
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.aside__problem_container .article__list {
+  margin: 4rem 0 5rem 4rem;
+}
+
+.aside__photo_circle {
+  border-radius: 100%;
+}
+
+.aside__tags_container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+
+  list-style-type: none;
+}
+
+.aside__tag .tag__item {
+  background-color: rgba(243, 244, 248, 0.7);
+
+  margin: 0rem;
+  padding: 0.75rem 1.5rem;
+
+  font-size: 3rem;
+  font-weight: 500;
+
+  border: none;
+  border-radius: 1.5rem;
+}
+
+.banner_4 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  position: relative;
+
+  padding: 8rem;
+
+  border: 1px solid #dedede;
+
+  overflow: hidden;
+}
+
+.banner_4 h4 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: #2963a3;
+}
+
+.banner_4 h4::first-letter {
+  font-size: 6rem;
+}
+
+.banner_4 p {
+  margin: 4rem 0;
+
+  font-size: 3.5rem;
+  color: #011632;
+}
+
+.banner_4 .aside__banner_price {
+  margin: 0 0 4rem;
+
+  font-size: 6rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.banner_4 .article__button {
+  width: auto;
+}
+
+.aside__banner_background {
+  position: absolute;
+  bottom: -13rem;
+  right: -13rem;
+
+  z-index: -1;
 }
 
 /* Баннер перед футером */
