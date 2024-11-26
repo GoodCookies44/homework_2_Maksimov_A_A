@@ -71,8 +71,6 @@ header {
   top: 0;
   left: 0;
 
-  padding: 0 8.5%;
-
   transition: top 0.3s;
   z-index: 1000;
 
@@ -82,8 +80,6 @@ header {
 }
 
 .header__container {
-  width: 100%;
-
   display: flex;
   flex-flow: row;
   justify-content: space-between;
@@ -110,6 +106,19 @@ header {
   align-items: center;
 }
 
+.header__burger_container {
+  height: 0;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.burger__menu,
+.burger__items {
+  height: 0;
+  overflow: hidden;
+  position: relative;
+}
+
 /* Ссылки шапки */
 .header__links a,
 button {
@@ -131,6 +140,8 @@ button {
 
   font-size: 4rem;
   font-weight: 600;
+
+  white-space: nowrap;
 }
 
 .header__button:active {
@@ -177,7 +188,7 @@ button {
 
 /* Основной контент */
 main {
-  padding: 19rem 8.5% 0;
+  padding-top: 19rem;
 }
 
 /* Хлебные крошки */
@@ -229,7 +240,7 @@ main {
 
 .tag__items {
   display: flex;
-  flex-flow: row;
+  flex-flow: row wrap;
   align-items: center;
   gap: 2rem;
 
@@ -395,7 +406,6 @@ footer {
 .footer__overLine_items {
   display: flex;
   justify-content: space-between;
-
   gap: 22.8rem;
 }
 
@@ -537,4 +547,241 @@ footer {
 .underLine__button {
   border: none;
   background-color: initial;
+}
+
+/* Стили для desktop'а (ширина экрана 1440px) */
+@media screen and (min-width: 1201px) {
+  main {
+    padding-left: 8.3vw;
+    padding-right: 8.3vw;
+  }
+
+  header {
+    padding-left: 8.3vw;
+    padding-right: 8.3vw;
+  }
+
+  footer {
+    padding-left: 8.3vw;
+    padding-right: 8.3vw;
+  }
+
+  .header__container {
+    width: 100%;
+  }
+}
+
+/* Стили для iPad Pro 12.9" (ширина экрана 1024px) */
+@media screen and (max-width: 1200px) and (min-width: 769px) {
+  main {
+    padding-left: 3.125vw;
+    padding-right: 3.125vw;
+  }
+
+  header {
+    padding-left: 3.125vw;
+    padding-right: 3.125vw;
+  }
+
+  footer {
+    padding-left: 3.125vw;
+    padding-right: 3.125vw;
+  }
+
+  .header__container {
+    width: auto;
+    column-gap: 5rem;
+  }
+
+  .header__links {
+    gap: 4rem;
+  }
+
+  .main__button_load_more {
+    margin: 8.75rem auto 15rem;
+  }
+
+  .footer__overLine_items {
+    justify-content: normal;
+    flex-wrap: wrap;
+    gap: 5.25rem;
+  }
+
+  .footer__links {
+    gap: 4rem 7.5rem;
+  }
+
+  .footer__mail_container {
+    width: 50%;
+  }
+}
+
+/* Стили для iPad mini (ширина экрана 768px) */
+@media screen and (max-width: 768px) and (min-width: 415px) {
+  main {
+    padding-left: 2.6vw;
+    padding-right: 2.6vw;
+    transition: margin-top 0.3s ease-in-out;
+  }
+
+  main.active {
+    margin-top: 50rem;
+  }
+
+  header {
+    padding-left: 2.6vw;
+    padding-right: 2.6vw;
+  }
+
+  footer {
+    padding-left: 2.6vw;
+    padding-right: 2.6vw;
+  }
+
+  .header__container {
+    width: 100%;
+    position: relative;
+  }
+
+  .header__button {
+    display: none;
+  }
+
+  .header__nav {
+    height: 0;
+    overflow: hidden;
+  }
+
+  .header__nav.active {
+    height: auto;
+    overflow: visible;
+  }
+
+  .header__nav.active .header__links {
+    flex-direction: column;
+    gap: 2rem;
+
+    position: absolute;
+    top: 20rem;
+
+    background-color: white;
+  }
+
+  .header__burger_container {
+    display: flex;
+    align-items: center;
+
+    height: auto;
+  }
+
+  .main__articles_container > .article__container:nth-child(1),
+  .main__articles_container > .article__container:nth-child(2) {
+    flex: 0 0 calc(100% - 4rem);
+  }
+
+  .main__articles_container > .article__container:nth-child(n + 3) {
+    flex: 0 0 calc(50% - 4rem);
+  }
+
+  .main__button_load_more {
+    margin: 8.25rem auto 13.75rem;
+  }
+
+  .footer__overLine_items {
+    justify-content: normal;
+    flex-wrap: wrap;
+    gap: 5.25rem;
+  }
+
+  .footer__links {
+    gap: 4rem 7.5rem;
+  }
+
+  .footer__mail_container {
+    width: 50%;
+  }
+}
+
+/* Стили для iPhone 11 Pro Max (ширина экрана 414px) */
+@media screen and (max-width: 414px) and (min-width: 321px) {
+  main {
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+
+  header {
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+
+  footer {
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+
+  .header__container {
+    width: auto;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .main__button_load_more {
+    margin: 8.75rem auto 15rem;
+  }
+
+  .footer__overLine_items {
+    justify-content: normal;
+    flex-wrap: wrap;
+    gap: 5.25rem;
+  }
+
+  .footer__links {
+    gap: 4rem 7.5rem;
+  }
+
+  .footer__mail_container {
+    width: 50%;
+  }
+}
+
+/* Стили для iPhone SE (ширина экрана 320px) */
+@media screen and (max-width: 320px) {
+  main {
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+
+  header {
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+
+  footer {
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+
+  .header__container {
+    width: auto;
+  }
+
+  .main__button_load_more {
+    margin: 8.75rem auto 15rem;
+  }
+
+  .footer__overLine_items {
+    justify-content: normal;
+    flex-wrap: wrap;
+    gap: 5.25rem;
+  }
+
+  .footer__links {
+    gap: 4rem 7.5rem;
+  }
+
+  .footer__mail_container {
+    width: 50%;
+  }
 }

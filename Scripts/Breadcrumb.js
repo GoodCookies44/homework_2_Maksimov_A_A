@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
         href = "/Pages/Blog.html";
       } else {
         readableName = segment.replace(".html", "");
-        href = index === 0 ? "index.html" : segment;
+        href = index === 0 ? "/Pages/index.html" : segment;
       }
       if (index === path.length - 1) {
         return `<li class="breadcrumb__item active">${pageTitle}</li>`;
@@ -24,6 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
     .join("");
 
   breadcrumb.innerHTML =
-    `<li class="breadcrumb__item"><a class="link" href="index.html">Главная</a></li>` +
+    `<li class="breadcrumb__item"><a class="link" href="/Pages/index.html">Главная</a></li>` +
     breadcrumbHTML;
 });
