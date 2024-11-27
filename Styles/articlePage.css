@@ -533,3 +533,196 @@ aside {
   background: #03a094;
   border-radius: 2px solid #03a094;
 }
+
+/* Стили для iPad Pro 12.9" (ширина экрана 1024px) */
+@media screen and (max-width: 1200px) and (min-width: 769px) {
+  .articlePage__container {
+    gap: 6rem;
+  }
+
+  .green {
+    margin-bottom: 17.75rem;
+  }
+
+  .tab__aricle_topic_list {
+    display: none;
+  }
+
+  .article__cta_banner {
+    display: none;
+  }
+
+  .articlePage__background_1,
+  .articlePage__background_2,
+  .articlePage__background_3 {
+    display: none;
+  }
+}
+
+/* Стили для iPad mini (ширина экрана 768px) */
+@media screen and (max-width: 768px) and (min-width: 571px) {
+  .articlePage__container {
+    flex-direction: column;
+    gap: 6rem;
+  }
+
+  aside {
+    flex-flow: row wrap;
+    gap: 4rem;
+
+    margin: 0 0 15rem 0;
+    width: auto;
+  }
+
+  .aside__banner_container {
+    max-width: 89rem;
+  }
+
+  .tab__aricle_topic_list {
+    display: none;
+  }
+
+  .article__cta_banner {
+    display: none;
+  }
+
+  .articlePage__background_1,
+  .articlePage__background_2,
+  .articlePage__background_3 {
+    display: none;
+  }
+}
+
+/* Стили для iPhone 11 Pro Max (ширина экрана 414px) */
+@media screen and (max-width: 570px) and (min-width: 401px) {
+  .articlePage__container {
+    flex-direction: column;
+    gap: 6rem;
+  }
+
+  .breadcrumb {
+    width: 100%;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .breadcrumb__item {
+    white-space: nowrap;
+  }
+
+  aside {
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 4rem;
+
+    margin: 0 0 15rem 0;
+    width: auto;
+  }
+
+  .aside__banner_container {
+    max-width: 80%;
+  }
+
+  .toc__links,
+  .article__list {
+    margin-left: 5rem;
+  }
+
+  .article__blockquote_2 {
+    height: auto;
+  }
+
+  .article__blockquote_2 .quote__content {
+    width: 100%;
+  }
+
+  .tab__article_photo_block {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tab__article_photo_block .article__img {
+    width: 100%;
+  }
+
+  .tab__aricle_topic_list {
+    display: none;
+  }
+
+  .article__cta_banner {
+    display: none;
+  }
+
+  .articlePage__background_1,
+  .articlePage__background_2,
+  .articlePage__background_3 {
+    display: none;
+  }
+}
+
+/* Стили для iPhone SE (ширина экрана 320px) */
+@media screen and (max-width: 400px) {
+  .articlePage__container {
+    flex-direction: column;
+    gap: 6rem;
+  }
+
+  .breadcrumb {
+    width: 100%;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .breadcrumb__item {
+    white-space: nowrap;
+  }
+
+  aside {
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 4rem;
+
+    margin: 0 0 15rem 0;
+    width: auto;
+  }
+
+  .aside__banner_container {
+    width: 80%;
+  }
+
+  .toc__links,
+  .article__list {
+    margin-left: 5rem;
+  }
+
+  .article__blockquote_2 {
+    height: auto;
+  }
+
+  .article__blockquote_2 .quote__content {
+    width: 100%;
+  }
+
+  .tab__article_photo_block {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tab__article_photo_block .article__img {
+    width: 100%;
+  }
+
+  .tab__aricle_topic_list {
+    display: none;
+  }
+
+  .article__cta_banner {
+    display: none;
+  }
+
+  .articlePage__background_1,
+  .articlePage__background_2,
+  .articlePage__background_3 {
+    display: none;
+  }
+}

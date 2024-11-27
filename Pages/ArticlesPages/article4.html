@@ -19,10 +19,9 @@
     <title>Статья: Как не утонуть в тревоге и управлять своими страхами.</title>
   </head>
   <body>
-    <header id="header">
+    <header>
       <div class="header__container">
         <svg
-          alt="Logo"
           width="51"
           height="51"
           viewBox="0 0 51 36"
@@ -68,47 +67,32 @@
         <nav class="header__nav">
           <ul class="header__links">
             <li class="nav__item">
-              <a
-                class="link"
-                href="/Pages/About.html"
-                target="_blank"
-                rel="nofollow noopenner noreferrer"
-                >О нас</a
-              >
+              <a class="link" href="/Pages/About.html" rel="nofollow noopenner noreferrer">О нас</a>
             </li>
+
             <li class="nav__item">
-              <a
-                class="link"
-                href="/Pages/Tariffs.html"
-                target="_blank"
-                rel="nofollow noopenner noreferrer"
+              <a class="link" href="/Pages/Tariffs.html" rel="nofollow noopenner noreferrer"
                 >Тарифы</a
               >
             </li>
+
             <li class="nav__item">
-              <a
-                class="link"
-                href="/Pages/Psychologists.html"
-                target="_blank"
-                rel="nofollow noopenner noreferrer"
+              <a class="link" href="/Pages/Psychologists.html" rel="nofollow noopenner noreferrer"
                 >Психологам</a
               >
             </li>
+
             <li class="nav__item">
-              <a
-                class="link"
-                href="/Pages/Certificate.html"
-                target="_blank"
-                rel="nofollow noopenner noreferrer"
+              <a class="link" href="/Pages/Certificate.html" rel="nofollow noopenner noreferrer"
                 >Сертификат</a
               >
             </li>
+
             <li class="nav__item">
               <div class="header__DropdownMenu link">
                 <button
                   class="DropdownMenu__item"
                   href="/Pages/Materials.html"
-                  target="_blank"
                   rel="nofollow noopenner noreferrer"
                 >
                   Материалы
@@ -130,25 +114,88 @@
             </li>
 
             <li class="nav__item">
-              <a
-                class="link"
-                href="/Pages/FAQ.html"
-                target="_blank"
-                rel="nofollow noopenner noreferrer"
-                >FAQ</a
-              >
+              <a class="link" href="/Pages/FAQ.html" rel="nofollow noopenner noreferrer">FAQ</a>
             </li>
           </ul>
         </nav>
+
         <button class="header__button">
-          <a href="/Pages/Wizard.html" target="_blank" rel="nofollow noopenner noreferrer"
-            >Подобрать психолога</a
-          >
+          <a href="/Pages/Wizard.html" rel="nofollow noopenner noreferrer">Подобрать психолога</a>
         </button>
+
+        <div class="header__burger_container">
+          <svg
+            class="burger__menu_icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="14"
+            viewBox="0 0 18 14"
+            fill="none"
+          >
+            <path
+              d="M0 1C0 0.447715 0.447715 0 1 0H17C17.5523 0 18 0.447715 18 1C18 1.55228 17.5523 2 17 2H1C0.447716 2 0 1.55228 0 1ZM0 7C0 6.44772 0.447715 6 1 6H17C17.5523 6 18 6.44772 18 7C18 7.55228 17.5523 8 17 8H1C0.447716 8 0 7.55228 0 7ZM0 13C0 12.4477 0.447715 12 1 12H17C17.5523 12 18 12.4477 18 13C18 13.5523 17.5523 14 17 14H1C0.447716 14 0 13.5523 0 13Z"
+              fill="#03B2A5"
+            />
+          </svg>
+        </div>
       </div>
 
-      <script src="/Scripts/Scroll.js"></script>
+      <nav class="burger__menu">
+        <ul class="header__links">
+          <li class="nav__item">
+            <a class="link" href="/Pages/About.html" rel="nofollow noopenner noreferrer">О нас</a>
+          </li>
+
+          <li class="nav__item">
+            <a class="link" href="/Pages/Tariffs.html" rel="nofollow noopenner noreferrer"
+              >Тарифы</a
+            >
+          </li>
+
+          <li class="nav__item">
+            <a class="link" href="/Pages/Psychologists.html" rel="nofollow noopenner noreferrer"
+              >Психологам</a
+            >
+          </li>
+
+          <li class="nav__item">
+            <a class="link" href="/Pages/Certificate.html" rel="nofollow noopenner noreferrer"
+              >Сертификат</a
+            >
+          </li>
+
+          <li class="nav__item">
+            <div class="header__DropdownMenu link">
+              <button
+                class="DropdownMenu__item"
+                href="/Pages/Materials.html"
+                rel="nofollow noopenner noreferrer"
+              >
+                Материалы
+              </button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 4.2"
+                fill="none"
+              >
+                <path
+                  d="M1.09998 0.899902L5.99998 5.0999L10.9 0.899902"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </div>
+          </li>
+
+          <li class="nav__item">
+            <a class="link" href="/Pages/FAQ.html" rel="nofollow noopenner noreferrer">FAQ</a>
+          </li>
+        </ul>
+      </nav>
     </header>
+
     <main>
       <nav>
         <ul id="breadcrumb" class="breadcrumb"></ul>
@@ -1014,5 +1061,8 @@
         <button class="underLine__button">Способы оплаты</button>
       </div>
     </footer>
+
+    <script src="/Scripts/Scroll.js"></script>
+    <script src="/Scripts/BurgerMenu.js"></script>
   </body>
 </html>
